@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class DetailsPage extends StatelessWidget {
   final String imagePath;
   final String title;
-  final String photographer;
+  final String designer;
   final String price;
   final int index;
   const DetailsPage(
       {super.key, required this.imagePath,
         required this.title,
-        required this.photographer,
+        required this.designer,
         required this.price,
         required this.index});
   @override
@@ -48,21 +48,21 @@ class DetailsPage extends StatelessWidget {
                         title,
                         style: const TextStyle(
                           color: Colors.lightBlueAccent,
-                          fontSize: 22,
+                          fontSize: 35,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                       Text(
-                        'By $photographer',
+                        'By $designer',
                         style: const TextStyle(
-                          fontSize: 10,
+                          fontSize: 25,
                         ),
                       ),
                       Text(
                         price,
                         style: const TextStyle(
                           color: Colors.lightBlueAccent,
-                          fontSize: 18,
+                          fontSize: 30,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
