@@ -154,7 +154,7 @@ class HomePage extends StatelessWidget {
             const Text(
               'Gallery',
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 35,
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
               ),
@@ -163,6 +163,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
+
             Expanded(
               child: Container(
                 padding: const EdgeInsets.symmetric(
@@ -178,9 +179,9 @@ class HomePage extends StatelessWidget {
                 ),
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10,
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 15,
+                    mainAxisSpacing: 15,
                   ),
                   itemBuilder: (context, index) {
                     return RawMaterialButton(
